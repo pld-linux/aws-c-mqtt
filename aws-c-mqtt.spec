@@ -6,7 +6,7 @@ Summary:	AWS C MQTT library
 Summary(pl.UTF-8):	Biblioteka AWS C MQTT
 Name:		aws-c-mqtt
 Version:	0.13.1
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Libraries
 #Source0Download: https://github.com/awslabs/aws-c-mqtt/releases
@@ -63,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 %if %{with tests}
-%{__rm} $RPM_BUILD_ROOT%{_bindir}/{elasticpubsub,elasticpubsub5,elastishadow,mqtt5canary}
+%{__rm} $RPM_BUILD_ROOT%{_bindir}/{elastipubsub,elastipubsub5,elastishadow,mqtt5canary}
 %endif
 
 %clean
