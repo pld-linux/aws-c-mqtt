@@ -5,13 +5,13 @@
 Summary:	AWS C MQTT library
 Summary(pl.UTF-8):	Biblioteka AWS C MQTT
 Name:		aws-c-mqtt
-Version:	0.13.1
-Release:	2
+Version:	0.15.2
+Release:	1
 License:	Apache v2.0
 Group:		Libraries
 #Source0Download: https://github.com/awslabs/aws-c-mqtt/releases
 Source0:	https://github.com/awslabs/aws-c-mqtt/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	d369035551221d37e1f6552df76554cc
+# Source0-md5:	03ceedec80e25c4423e6a3dec9436101
 URL:		https://github.com/awslabs/aws-c-mqtt
 BuildRequires:	aws-c-common-devel
 BuildRequires:	aws-c-http-devel
@@ -75,7 +75,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc NOTICE README.md
-%attr(755,root,root) %{_libdir}/libaws-c-mqtt.so.1.0.0
+%{_libdir}/libaws-c-mqtt.so.1.0.0
 
 %files devel
 %defattr(644,root,root,755)
